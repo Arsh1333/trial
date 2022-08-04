@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Codechef-Turing</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        .header{
+            width:100%;
+            min-height: 100vh;
+            display: flex;
+            flex-wrap:wrap;
+
+        }
+        .col-1{
+            flex-basis: 43%;
+            flex-grow: 1;
+            background-image: url(https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+            background-size: cover;
+            background-position: center;
+            padding:40px;
+            color:red;
+            
+        }
+        .col-2{
+            flex-basis: 57%;
+            flex-grow: 1;
+            padding:40px 80px;
+            background-image:url(https://images.pexels.com/photos/1260727/pexels-photo-1260727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+            background-size: contain;
+            background-position: center;
+            justify-content: space-between;
+        }
+        .nav{
+            width:100%;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .logo{
+            width:80px;
+            cursor: pointer,
+            
+            
+
+        }
+        .left-text{
+            
+            margin:180px auto 0;
+        }
+        .left-text h1{
+            font-size: 50px;
+            font-weight: 500;
+        }
+        .left-text p{
+            font-size: 27px;
+            font-weight: 300;
+            line-height: 24px;
+            margin:30px 0;
+
+        }
+        .col-2 ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 100px;
+
+        }
+        .col-2 ul li a{
+            display: inline-block;
+            color:#333;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        .btn{
+            border:3px solid #ff5a5a;
+            padding: 10px 30px;
+        }
+        .right-text{
+            margin-top: 160px;
+        }
+        .right-text h2{
+            font-size: 50px;
+            font-weight: 400;
+            margin-bottom:30px;
+        }
+        .right-text h3{
+            font-weight: 500;
+            margin-bottom: 30px;
+            color:#333;
+        }
+        .right-text p{
+            font-size: 15px;
+            margin-bottom: 30px;
+            color:#555;
+        }
+        .right-text a{
+            text-decoration: none;
+            display:inline-block;
+            background: #ff5a5a;
+            color:#fff;
+            font-weight: 300;
+            letter-spacing: 1px;
+            padding: 15px 50px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px  10px rgba(255, 90, 90 , 0.7);
+            transition: transform 0.5s;
+
+        }
+        .right-text a:hover{
+            transform: translateY(-6px);
+        }
+        .slide-left{
+            animation: slideleft 1s linear forwards;
+        }
+        @keyframes slideleft{
+            0%{
+                transform: translate(100px);
+                opacity: 0;
+            }
+            100%{
+                transform: translate(0px);
+                opacity: 1;
+            }
+        }
+        .about{
+            color: #333;
+            font-weight: 300px;
+            letter-spacing: 1px;
+            padding: 15px 50px;
+            background-color:white;
+            
+
+        }
+        .abt{
+            float: right;
+            box-shadow: 0,5px,10px,rgb(38, 38, 38);
+
+        }
+        .abt:hover{
+            transform: translateY(10px);
+
+        }
+        .trophy:hover{
+            transform: translateY(10px);
+            
+        }
+        .events{
+            position:relative;
+            width:100%;
+            height:100%;
+            background: white;
+
+        }
+        .details a{
+            text-decoration: none;
+            display:inline-block;
+            background:rgb(243, 77, 77);
+            color:#fff;
+            font-weight: 300;
+            letter-spacing: 1px;
+            padding: 15px 50px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px  10px silver;
+            transition: transform 0.5s;
+
+        }
+        .details a :hover{
+            transform: translateY(-6px);
+        }
+        .time{
+            position:relative;
+            padding:20px;
+            background:rgba(255, 90, 90 , 0.7) ;
+            
+    
+        }
+        .time h2{
+            color: white;
+           
+        }
+        .wraper{
+           margin-top:10%;
+
+
+        }
+   .wraper h1{
+     font-family:cursive;
+     font-size: 52px;
+     margin-bottom:60px;
+     text-align:center;
+
+   }
+   .steps{
+    display:flex;
+    width:auto;
+    text-align:center;
+    justify-content: center;
+   }
+   .steps .steps_member{
+    background:#fff;
+    margin:5px;
+    margin-bottom:50px;
+    width:300px;
+    padding:20px;
+    line-height:20px;
+    color:#8e8b8b;
+    position:relative;
+
+   }
+   .steps .steps_member  h3{
+    color:rgb(253, 132, 132);
+    font-size:20px;
+    margin-top:50px;
+   }
+   .schedule{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 52px;
+     margin-bottom:60px;
+   }
+   .abtus{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 52px;
+     margin-bottom:60px;
+
+   }
+   .reg{
+    justify-content: right;
+    align-items: right;
+    width:150px;
+    float: right;
+
+   }
+   .contact-in{
+    width:80%;
+    height:auto;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    padding:10px;
+    border-radius:10px;
+    background:#fff;
+    box-shadow: 0px 0px 10px 0px #666;
+
+   }
+   .contact-map{
+    width:100%;
+    height:auto;
+    flex:50%;
+
+   }
+  .contact-form{
+    width:100%;
+    height:auto;
+    flex: 50%;
+   }
+   .contact-form h1{
+    margin-bottom:10px;
+    text-align: center;
+   }
+   .contact-form-txt
+   {
+    width:100%;
+    height:40px;
+    color:#000;
+    border:1px solid #bcbcbc;
+    border-radius:50px;
+    outline:none;
+    margin-bottom: 20px;
+    padding : 15px;
+   }
+   .contact-form-textarea{
+    width:100%;
+    height:130px;
+    color:#000;
+    border:1px solid #bcbcbc;
+    border-radius:50px;
+    outline:none;
+    margin-bottom: 20px;
+    padding : 15px;
+
+
+   }
+   .contact-form-textarea::placeholder{
+    color:#aaa;
+   }
+   .contact-form-btn{
+    width:100%;
+    border:none;
+    outline:none;
+    border-radius:50px;
+    background: #ff5a5a;
+    color:#fff;
+    text-transform: uppercase;
+    padding :10px;
+    font-size:20px;
+   }
+   footer{
+    background-color: #ff5a5a;
+    text-decoration: none;
+    text-align: center;
+   }
+     
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="col-1">
+            <div class="nav">
+                <img src="https://miro.medium.com/max/333/1*1W0-bbmt4iiEpp_pPrS0VQ.png" class="logo" >
+            </div>
+            <div class="left-text">
+                <h1 class="slide-left"><b>IT'S MORE THAN A COMPETITION</b></h1>
+            
+
+            </div>
+        </div>
+        <div class="col-2">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#" class="btn">Register</a></li>
+            </ul>
+            <div class="right-text slide-left">
+                <h2 class="slide-left">TURING CUP 2022</h2>
+                <h3 class="slide-left">GAME ON</h3>
+                <p class="slide-left">Named after Alan Turing, the Turing Cup is CodeChef SIESGST's annual flagship competitive coding contest. A national level programming challenge, the contest invites individual coders to crack challenging problem statements and come up with the most intuitive and efficient solution possible - all in the given time frame.</p>
+                <a href="#" >Learn More</a>
+            </div>
+        </div>
+        <hr>
+<div class="about">
+    <h1 class="abtus">ABOUT</h1>
+    <h2>WHAT IS TURING CUP?</h2>
+    <p>Turing Cup is the annual flagship competitive programming contest organised by SIESGSTarena - the CodeChef SIESGST Campus Chapter. We encourage the best programmers to apply their wits at challenging problem statements to arrive at the most intuitive and efficient solution possible. The Turing Cup is named in honour of Alan Turing.</p>
+    <img src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="250" class="abt">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>HOW IT WORKS?</h2>
+    <p>Register and compete in Turing Cup's Online Qualifier Round. It lasts 96 hours, but a strong contestant won't need that long to earn the round’s qualifying point minimum.</p>
+    <p>  The top 20 contestants from Turing Cup Qualifier Round will make it to the Finals. There, they’ll compete for the championship title and prizes.</p>
+<img src="https://images.pexels.com/photos/7005693/pexels-photo-7005693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="250"  height="200" class="trophy">
+
+</div>
+    </div>
+    <hr>
+    <h1 class="schedule">SCHEDULE</h1>
+    <br>
+    <div class="events">
+        <ul>
+            <li>
+                <div class="time">
+                    <h2>05<br><span>April</span></h2>
+                    
+                </div>
+                <div class="details">
+                    <h3>Registration begins!</h3>
+                    <p>Register individually following the procedure given in registration section.</p>
+                <a href="#">View Details</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div class="events">
+        <ul>
+            <li>
+                <div class="time">
+                    <h2>13<br><span>April</span></h2>
+                    
+                </div>
+                <div class="details">
+                    <h3>Registration Ends</h3>
+                    <p>Registration ends on 13th April 6:59 pm sharp</p>
+                <a href="#">View Details</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div class="events">
+        <ul>
+            <li>
+                <div class="time">
+                    <h2>13<br><span>April</span></h2>
+                    
+                </div>
+                <div class="details">
+                    <h3>Contest Starts</h3>
+                    <p>Contest starts at 7:00pm. Contenders from several colleges across the country will compete for the Turing Cup 2022 Title.</p>
+                <a href="#">View Details</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div class="events">
+        <ul>
+            <li>
+                <div class="time">
+                    <h2>15<br><span>April</span></h2>
+                    
+                </div>
+                <div class="details">
+                    <h3>Contest Ends</h3>
+                    <p>The contest will end on 15th April 07:00 PM and the champions will be declared.</p>
+                <a href="#">View Details</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wraper">
+     
+        <h1>HOW TO REGISTER</h1>
+        <img src="https://media.istockphoto.com/photos/-picture-id466503451?s=2048x2048" width="150">
+        <img src="https://media.istockphoto.com/photos/register-button-on-computer-keyboard-picture-id518733132?s=612x612" width="250" class="reg">
+        <div class="steps">
+            <div class="steps_member">
+                <h3>STEP 1</h3>
+                <p>Entery fee for participating in Turing Cup 2022 is Rs.40/- You can pay via UPI .</p>
+                </div>
+                <div class="steps_member">
+                    <h3>STEP 2</h3>
+                    <p>After doing the payment you have to fill up the registeration form and mention your transaction id.</p>
+                    </div>
+                    <div class="steps_member">
+                        <h3>STEP 3</h3>
+                        <p>Make sure you are registered on Arena before filling up the form as we will require your arena username while registering for Turing Cup.</p>
+            </div>
+         
+        </div>
+    </div>
+    <div class="contact-in">
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4755497649626!2d73.02088931387725!3d19.042818057965484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3db6137e8bf%3A0x9d8f522c406b8521!2sSIES%20College%20of%20Arts%2C%20Science%20and%20Commerce!5e0!3m2!1sen!2sin!4v1659460749745!5m2!1sen!2sin" width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-form">
+            
+            <h1>Contact Us</h1>
+            <form>
+                <input type="text" placeholder="Name" class="contact-form-txt" />
+                <input type="email" placeholder="Email"  class="contact-form-txt" />
+                <textarea placeholder="Message" class="contact-form-textarea"></textarea>
+                <input type="submit" placeholder="Submit" class="contact-form-btn" />
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Turing cup</p>
+        <p><a href="http://arena.siesgst.ac.in/turingcup">@turingcup.com</a></p>
+      </footer>
+   
+      
+</body>
+</html>
